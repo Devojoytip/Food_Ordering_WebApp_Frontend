@@ -1,0 +1,56 @@
+/* Navbar  */
+#navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+#navbar ul{
+    flex-direction: column;
+}
+
+/* Home  */
+
+.home{
+
+}
+
+/* Services  */
+
+.services-container{
+    margin-top: 67%
+}
+
+.services{
+    flex-direction: column;
+}
+
+/* Client  */
+.clients{
+    flex-wrap: wrap;
+}
+.clients img{
+    width: 100px;
+    padding: 14px;
+}
+
+
+
+.clients img{
+    width: 66px;
+    padding: 6px;
+    height: auto;
+}
+
+/* .client-section::before{
+    height: auto;
+
+} */
+
+/* Contact  */
+.contact{
+    margin-top: 57%;
+}
+
+.contact-box form{
+    width: 80%;
+}

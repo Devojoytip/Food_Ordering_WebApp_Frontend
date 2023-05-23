@@ -1,0 +1,247 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+/* CSS Variables */
+
+
+/* navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* logo  */
+#logo{
+    margin: 5px 40px;
+}
+
+#logo img{
+    height: 52px;
+}
+
+/* navbar list */
+#navbar{
+    position: sticky;
+    display: flex;
+    background-color: gray;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Lato', sans-serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    color: azure;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+#navbar::before{
+    content: "";
+    background-color: gray;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#navbar ul li a{
+    display: block;
+    border-radius: 20px;
+    padding: 10px 22px;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+#navbar a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+/* Home section  */
+.home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 3px;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
+}
+
+.home::before{
+    content: "";
+    background: url(../images/foods1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 2%;
+}
+
+.home p{
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+    width: 60%;
+}
+
+/* Services */
+
+.services-container{
+    margin-top: 18%;
+    /* margin-top: 270px; */
+    height: 50%;
+}
+
+.services{
+    display: flex;
+}
+.services .box{
+    border: 2px solid black;
+    margin: 1%;
+    padding: 3%;
+    background-color: snow;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+    border-radius: 5%;
+}
+
+.services .box h1{
+    font-size: 1.8rem;
+}
+
+.services img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+/* Client section  */
+.client-section{
+    margin-top: 3%;
+    /* height: auto; */
+}
+
+.client-section::before{
+    content: '';
+    position: absolute;
+    background: url(../images/dish1.webp) no-repeat center center/cover;
+    width: 100%;
+    height: 50%; 
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.clients img{
+    height: 180px;
+    /* height: auto; */
+    width: 180px;
+    padding: 34px;
+}
+
+/* Contact */
+.contact{
+    position: relative;
+    margin-top: 5%;
+}
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+
+.contact-box input, textarea{
+    width: 100%;
+    padding: 0.5rem;
+    margin: 1%;
+}
+
+.contact-box form{
+    width: 40%;
+}
+
+.contact-box input{
+    font-size: 1.3rem;
+}
+
+.contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../images/contact.png);
+}
+
+.contact label{
+    font-size: 1.5rem;
+    margin: 1%;
+    font-family: 'Trebuchet MS';
+}
+
+/* Footer  */
+
+footer{
+    background: black;
+    color: aliceblue;
+    padding: 9px 20px;
+}
+
+/* Utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 10px;
+    /* color: gray; */
+}
+
+.h-secondary{
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.btn {
+    font-size: 1.3rem;
+    background-color: brown;
+    font-family: sans-serif;
+    padding: 5px;
+    border: 2px solid white;
+    font-weight: bolder;
+    margin: 2%;
+    color: azure;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
